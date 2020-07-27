@@ -1,5 +1,11 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<form asp-controller="Home" asp-action="Result" method="post">
+    Num1: <input type="number" name="num1" />
+    Num2: <input type="number" name="num2" />
+
+    Plus:     <input type="radio" name="operation" value="Plus" />
+    Minus:    <input type="radio" name="operation" value="Minus" />
+    Multiply: <input type="radio" name="operation" value="Multiply" />
+    Divide:   <input type="radio" name="operation" value="Divide" />
+
+    <input type ="submit" />
+</form>

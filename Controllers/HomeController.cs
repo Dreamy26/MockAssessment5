@@ -23,6 +23,38 @@ namespace MockAssessment5.Controllers
             return View();
         }
 
+        public IActionResult Calculator()
+        {
+            return View();
+        }
+
+        public IActionResult Result(int num1, int num2, string operation)
+        {
+            ViewBag.Operation = operation;
+
+            if (operation == "Plus")
+            {
+                ViewBag.Result = num1 + num2;
+            }
+
+            if (operation == "Minus")
+            {
+                ViewBag.Result = num1 - num2;
+            }
+
+            if (operation == "Multiply")
+            {
+                ViewBag.Result = num1 * num2;
+            }
+
+            if (operation == "Divide")
+            {
+                ViewBag.Result = num1 / num2;
+            }
+
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
