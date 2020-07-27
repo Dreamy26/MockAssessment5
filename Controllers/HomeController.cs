@@ -23,11 +23,14 @@ namespace MockAssessment5.Controllers
             return View();
         }
 
+        //Matching view for the calculator
         public IActionResult Calculator()
         {
             return View();
         }
 
+        // RESULT action -- that takes in 3 perameters
+        // num1, num2, operation (which is the name of the type calcultion from the calculator, i.e Minus, therefore string
         public IActionResult Result(int num1, int num2, string operation)
         {
             ViewBag.Operation = operation;
